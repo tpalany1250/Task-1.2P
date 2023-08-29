@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Displays website correctly on a variety of devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1.2P</title>
+
+    <style> /* CSS */
+    
+    /* Whole website */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Header of the website */
+    header {
+        background-color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Website content */
+    main {
+        width: 90%; 
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    /* Links */
+    nav a {
+        margin: 0 10px;
+    }
+
+    /* Border */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Columns */
+    [class*="col-"] {
+        float: left;
+        padding: 25px;
+    }
+
+    /* What is Responsive Web Design */
+    .aside {
+        background-color: #33b5e5;
+        padding: 25px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    /* How to Implement Responsive Web Design */
+    .front {
+        padding: 25px;
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+    }
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Title of Webpage -->
+    <header>
+        <h1>Responsive Web Design</h1>
+        <h2>Task 1.2P</h2>
+
+        <nav>
+            <a href="RWS.html">Responsive Web Design</a> <!-- PART 1 LINK -->
+            <a href="JS.html">Javascript</a> <!-- PART 2 LINK -->
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+
+        <!-- QUESTION 2 -->
+        <div class="col-8 col-s-12">
+            <div class="front">
+                <h1>How to Implement Responsive Web Design with HTML and CSS?</h1>
+                <p>Implementing responsive web design is all about using HTML and CSS to create a user-friendly interface for different devices. One of the basic approaches to do so is by using fluid grids. This is an approach that allows elements on the screen to be scaled proportionally with the viewport size allowing for a consistent layout on different devices. This is as fluid grids define layout dimensions based of relative units like percentages rather than fixed pixels. Additionally, media queries also play a vital role in responsive design. Through applying CSS rules based on specific screen conditions such as width, orientation, and resolution, developers are able to create breakpoints at which the layout and styling are adjusted to suit the device’s dimensions. As well as this, to ensure that the images are flexible with the screen and do not exceed the container’s width, the ‘max-width: 100%’ property should be used. This helps with proper scaling and preventing distortion. Another essential component is the viewport meta tag. The tag instructs mobile browsers to render the content to the device’s actual width whereby improving the overall user experience. Furthermore, CSS layout methods like Flexbox and Grid provide as powerful tools to create flexible grids in which help build responsive sites. Finally, responsive typography can be achieved through media queries to adjust font sizes or using viewport units like ‘vw’ while maintaining text zoomability through the use of ‘calc()’ to combine fixed and responsive values. As such, through these HTML and CSS aspects, a responsive web design can be implemented.</p>
+            </div>
+        </div>
+
+        <!-- QUESTION 1 -->
+        <div class="col-4 col-s-12">
+            <div class="aside">
+                <h2>What is Responsive Web Design and Why it is Important?</h2>
+                <p>Responsive web design is an approach to designing web pages that fits all screen sizes and resolutions. The aim is to make sure your web page looks good on all devices (desktops, tablets, and phones) whilst still having a good functionality and usability. This approach is essential for designing web pages in today’s world as many people all over the world have a variety of devices. Without a responsive web design, website may appear distorted and difficult to navigate around or even become unreadable in certain devices. This can lead to frustration among users causing them to leave the websites. As such by using techniques such as fluid grids, media queries and flexible images, responsive design can prevent these issues from happening allowing the websites to automatically adjust their layout, content and styling based of the user’s screen. Overall, this approach not only improves the user’s experience but also allows websites to be more visually appealing across different devices and screen sizes while remaining accessible and usable.</p>
+            </div>
+            
+            <br><br><br>
+
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <p>&copy; 2023 Responsive Web Design</p> <!-- Footer -->
+    </footer>
+
+</body>
+
+</html>

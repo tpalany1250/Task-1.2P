@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Displays website correctly on a variety of devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1.2P</title>
+
+    <style> /* CSS */
+
+    /* Whole website */
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Header of the website */
+    header {
+        background-color: #f8f8f8;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Links */
+    nav a {
+        margin: 0 10px;
+    }
+
+    /* Footer of the website */
+    footer {
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Styles for the lists */
+    ul::before {
+        content: '\2022'; /* Unicode character for bullet point (•) */
+        color: rgb(0, 0, 0); /* Change this to the color you want */
+        display: inline-block;
+        width: 1em; /* Adjust as needed */
+        margin-left: 1em;
+    }
+
+    /* paragraph styling */
+    p {
+        margin-left: 40px;
+    }
+
+    /* h3 styling */
+    h3 {
+        margin-left: 40px;
+    }
+
+    /* h4 styling */
+    h4 {
+        margin-left: 40px;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+    /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+    }
+
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+
+    /* String class */
+    .String {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 30px;
+        background-color: bisque;
+    }
+
+    /* Number class */
+    .Number {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 30px;
+        background-color: bisque;
+    }
+
+    /* Array class */
+    .Array {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 30px;
+        background-color: bisque;
+    }
+
+    /* Date class */
+    .Date {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 30px;
+        background-color: bisque;
+    }
+
+    /* Function class */
+    .Function {
+        width: 80%; 
+        margin: 0 auto;
+        padding: 30px;
+        background-color: bisque;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+    <!-- Title of Webpage -->
+    <header>
+        <h1>JavaScript</h1>
+        <h2>Task 1.2P</h2>
+
+        <nav>
+            <a href="RWS.html">Responsive Web Design</a> <!-- PART 1 LINK -->
+            <a href="JS.html">Javascript</a> <!-- PART 2 LINK -->
+        </nav>
+    </header>
+
+    <br><br>
+
+
+    <!-- STRING METHODS -->
+    <div class="String">
+        <h2>String Method</h2>
+
+        <h3> The properties of the string "Hello World!!" include: </h3>
+
+        <!-- 1st method -->
+        <ul>The length of the string is: <span id="s1"></span></ul>
+
+        <!-- 2nd method -->
+        <ul>First word: <span id="s2"></span></ul>
+        <ul>Last word: <span id="s2.1"></span></ul>
+
+        <!-- 3rd method -->
+        <ul>Uppercase Version: <span id="s3">Hello World!!</span></ul>
+
+        <!-- 4th method -->
+        <ul>Lowercase Version: <span id="s4">Hello World!!</span></ul>
+
+        <!-- 5th method -->
+        <h4>Hello World!! <span id="s5"></span></h4>
+
+    </div>
+
+    <br>
+
+    <!-- NUMBER METHODS -->
+    <div class="Number">
+        <h2>Number Method</h2>
+
+        <!-- 1st method -->
+        <h4>Number Approximation: <span id="n1"></span></h4>
+
+        <!-- 3rd method -->
+        <h3>Rounding Decimals</h3>
+        <ul id="n3a"></ul>
+        <ul id="n3b"></ul>
+        <ul id="n3c"></ul>
+        <ul id="n3d"></ul>
+
+        <!-- 4th method -->
+        <h3>Rounding Precise Numbers</h3>
+        <ul id="n4a"></ul>
+        <ul id="n4b"></ul>
+        <ul id="n4c"></ul>
+        <ul id="n4d"></ul>
+
+        <!-- 2nd method -->
+        <h3>Using exponential notation</h3>
+        <ul id="n2a"></ul>
+        <ul id="n2b"></ul>
+        <ul id="n2c"></ul>
+        <ul id="n2d"></ul>
+
+        <!-- 5th method -->
+        <h4>Overall, the number of approximations used: <span id="n5"></span></h4>
+
+
+    </div>
+
+    <br>    
+
+    <!-- NUMBER METHODS -->
+    <div class="Array">
+        <h2>Array Method</h2>
+
+        <h3>The properties of the array "["Banana", "Orange", "Apple", "Mango"]" include:</h3>
+
+        <!-- 1st method -->
+        <ul>The length of the array: <span id="a1"></span></ul>
+
+        <!-- 2nd method -->
+        <ul>Contents of the array: <span id="a2"></span></ul>
+
+        <!-- 3rd method -->
+        <h4>Removing Mango from the array content</h4>
+        <ul id="a3"></ul>
+
+        <!-- 4th method -->
+        <h4>Adding Kiwi to the array content</h4>
+        <ul id="a4"></ul>
+
+        <!-- 5th method -->
+        <h4>Removing Banana while shifting the rest to the left</h4>
+        <ul id="a5"></ul>
+
+
+    </div>
+
+    <br>    
+
+    <!-- DATE METHODS -->
+    <div class="Date">
+        <h2>Date Method</h2>
+
+        <!-- 1st method -->
+        <h4>Year: <span id="d1"></span></h4>
+
+        <!-- 2nd method -->
+        <h4>Month: <span id="d2"></span></h4>
+
+        <!-- 3rd method -->
+        <h4>Day: <span id="d3"></span></h4>
+
+        <!-- 4th method -->
+        <h4>Hours: <span id="d4"></span></h4>
+
+        <!-- 5th method -->
+        <h4>Minute: <span id="d5"></span></h4>
+
+        <!-- 6th method -->
+        <h4>Seconds: <span id="d6"></span></h4>
+
+
+    </div>
+
+    <br>    
+
+    <!-- FUNCTION METHODS -->
+    <div class="Function">
+        <h2>Function Method</h2>
+
+        <h3>Cost of 4 Oranges and 5 Apples = $12</h3>
+
+        <!-- 1st method -->
+        <h4>Total number of fruits = <span id="f1"></span> fruits</h4>
+
+        <!-- 2nd method -->
+        <h4>Price of each fruit (Assuming they share the same cost): $<span id="f2"></span> each</h4>
+
+    </div>
+
+    <br><br><br><br>
+
+    <script> //JAVASCRIPT
+
+        console.log("");
+
+        // STRING METHOD
+        console.log("String Methods");
+
+        // String Length (1st method)
+        let s1 = "Hello World!!";
+        document.getElementById("s1").innerHTML = s1.length;
+
+        // Extracting String by String Slice (2nd method)
+        document.getElementById("s2").innerHTML = s1.slice(0,5);
+        document.getElementById("s2.1").innerHTML = s1.slice(6,11);
+
+        // String toUpperCase() (3rd method)
+        let UPPER = document.getElementById("s3").innerHTML;
+        document.getElementById("s3").innerHTML = UPPER.toUpperCase();
+
+        // String toLowerCase() (4th method)
+        let LOWER = document.getElementById("s4").innerHTML;
+        document.getElementById("s4").innerHTML = LOWER.toLowerCase();
+
+        // String concat() (5th method)
+        let text1 = "Enjoy"
+        let text2 = "Have a Good Day"
+        let text3 = text1.concat(" & ",text2);
+        document.getElementById("s5").innerHTML = text3;
+
+        console.log("");
+
+
+        // NUMBER METHOD
+        console.log("Number Methods");
+
+        // toString() (1st method)
+        let a = 1254.345;
+        document.getElementById("n1").innerHTML = a.toString()
+
+        // toExponential() method (2nd method)
+        document.getElementById("n2a").innerHTML = a.toExponential()
+        document.getElementById("n2b").innerHTML = a.toExponential(2)
+        document.getElementById("n2c").innerHTML = a.toExponential(4)
+        document.getElementById("n2d").innerHTML = a.toExponential(6)
+
+        // toFixed() Method (3rd method)
+        document.getElementById("n3a").innerHTML = a.toFixed(0)
+        document.getElementById("n3b").innerHTML = a.toFixed(2)
+        document.getElementById("n3c").innerHTML = a.toFixed(4)
+        document.getElementById("n3d").innerHTML = a.toFixed(5)
+
+        // toPrecision() Method (4th method)
+        document.getElementById("n4a").innerHTML = a.toPrecision(2)
+        document.getElementById("n4b").innerHTML = a.toPrecision(3)
+        document.getElementById("n4c").innerHTML = a.toPrecision(4)
+        document.getElementById("n4d").innerHTML = a.toPrecision(5)
+ 
+        // valueOf() Method (5th method)
+        let num = 3;
+        document.getElementById("n5").innerHTML = num.valueOf()
+        
+        console.log("");
+
+
+        // ARRAYS METHOD
+        console.log("Array Methods");
+
+        // Array length (1st method)
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let size = fruits.length;
+        document.getElementById("a1").innerHTML = size;
+
+        // The join() Method (2nd method)
+        document.getElementById("a2").innerHTML = fruits.join(" , ");
+        
+        // pop() method (3rd method)
+        fruits.pop();
+        document.getElementById("a3").innerHTML = fruits;
+
+        // push() method (4th method)
+        fruits.push("Kiwi");
+        document.getElementById("a4").innerHTML = fruits;
+
+        // shift() method (5th method)
+        fruits.shift();
+        document.getElementById("a5").innerHTML = fruits;
+
+        console.log("");
+
+
+        // DATE
+        console.log("Date Methods");
+
+        // getFullYear() Method (1st method)
+        const d = new Date();
+        document.getElementById("d1").innerHTML = d.getFullYear();
+
+        // getMonth() Method (2nd method)
+        document.getElementById("d2").innerHTML = d.getMonth() + 1;
+
+        // getDate() Method (3rd method)
+        document.getElementById("d3").innerHTML = d.getDate();
+
+        // getHours() Method (4th method)
+        document.getElementById("d4").innerHTML = d.getHours();
+
+        // getMinutes() Method (5th method)
+        document.getElementById("d5").innerHTML = d.getMinutes();
+
+        // getSeconds() Method (6th method)
+        document.getElementById("d6").innerHTML = d.getSeconds();
+
+        console.log("");
+
+
+        // FUNCTION
+        console.log("Function Methods");
+
+        // Function Call (1st method)
+        function addFunction(value1, value2) {
+            let sum = value1 + value2;
+            return sum;
+        }
+
+        document.getElementById("f1").innerHTML = addFunction(4,5)
+
+        // Function Call (2nd method)
+        function divFunction(cost, sum) {
+            let div = cost / sum;
+            return div;
+        }
+
+        document.getElementById("f2").innerHTML = divFunction(12,9)
+
+        console.log("");
+
+
+    </script>
+
+
+    <footer>
+        <p>&copy; 2023 JavaScript</p> <!-- Footer -->
+    </footer>
+
+</body>
+</html>
